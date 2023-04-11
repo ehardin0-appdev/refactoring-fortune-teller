@@ -28,17 +28,17 @@ class AirController < ApplicationController
     render({ :template => "wind_templates/libra.html.erb" })
   end
 
-  def waterbearer
-    @horoscope = "Today may prove to be one of your busiest in a long time, Aquarius. The promise of continuing success in your personal and professional goals could find you spending a lot of time on the phone, writing emails, or making a few short trips around the community. You might not be able to reach everyone you need to see. Don't worry. Be persistent and you will reach them eventually."
+  # def waterbearer
+  #   @horoscope = "Today may prove to be one of your busiest in a long time, Aquarius. The promise of continuing success in your personal and professional goals could find you spending a lot of time on the phone, writing emails, or making a few short trips around the community. You might not be able to reach everyone you need to see. Don't worry. Be persistent and you will reach them eventually."
 
-    @array_of_numbers = Array.new
+  #   @array_of_numbers = Array.new
 
-    5.times do
-      another_number = rand(1...100)
+  #   5.times do
+  #     another_number = rand(1...100)
       
-      @array_of_numbers.push(another_number)
-    end
+  #     @array_of_numbers.push(another_number)
+  #   end
 
-    render({ :template => "wind_templates/aquarius.html.erb" })
-  end
+  #   render({ :template => "wind_templates/aquarius.html.erb" })
+  # end
 end
